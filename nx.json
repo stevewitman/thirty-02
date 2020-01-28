@@ -1,0 +1,22 @@
+{
+  "npmScope": "nx02",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "app02": {
+      "tags": []
+    },
+    "app02-e2e": {
+      "tags": [],
+      "implicitDependencies": ["app02"]
+    }
+  }
+}
