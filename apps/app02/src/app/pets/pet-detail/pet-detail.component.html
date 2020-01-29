@@ -1,2 +1,33 @@
-<p>pet detail</p>
-
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Pet Details</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <form (submit)="saved.emit(currentPet)">
+    <mat-card-content>
+      <div fxLayout="column">
+        <p>Pet Id: {{ currentPet.id }}</p>
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            placeholder="Title"
+            type="text"
+            [(ngModel)]="currentPet.title"
+            name="title">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            placeholder="Description"
+            [(ngModel)]="currentPet.details"
+            type="text"
+            name="details">
+        </mat-form-field>
+        </div>
+        <mat-card-actions>
+          <button mat-raised-button color="default" type="button" (click)="cancelled.emit(currentPet)">Clear</button>
+          <button mat-raised-button color="primary" type="submit">Save</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </form>
+</mat-card>
