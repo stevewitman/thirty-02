@@ -1,1 +1,19 @@
-<p>pets-list works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Pets List</mat-card-title>
+  </mat-card-header>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item
+        *ngFor="let pet of pets"
+        style="cursor: pointer">
+        <h4 mat-line>{{ pet.title }}</h4>
+        <p mat-line>{{ pet.details }}</p>
+        <button mat-icon-button>X</button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
