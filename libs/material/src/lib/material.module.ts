@@ -1,48 +1,59 @@
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-import {
-  MatInputModule,
-  MatCardModule,
+import  {
   MatButtonModule,
-  MatSidenavModule,
-  MatListModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatGridListModule,
   MatIconModule,
-  MatToolbarModule,
-  MatProgressSpinnerModule,
+  MatInputModule,
+  MatListModule,
   MatMenuModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSnackBarModule,
   MatTableModule,
-  MatSelectModule
-} from '@angular/material';
+  MatToolbarModule,
+  MatButtonToggleModule
+}  from  '@angular/material';
 
 @NgModule({
   imports: [
-    FlexLayoutModule,
-    MatInputModule,
-    MatCardModule,
     MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatGridListModule,
     MatIconModule,
-    MatToolbarModule,
-    MatProgressSpinnerModule,
+    MatInputModule,
+    MatListModule,
     MatMenuModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSnackBarModule,
     MatTableModule,
-    MatSelectModule
+    MatToolbarModule,
+    MatButtonToggleModule
   ],
   exports: [
-    FlexLayoutModule,
-    MatInputModule,
-    MatCardModule,
     MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatGridListModule,
     MatIconModule,
-    MatToolbarModule,
-    MatProgressSpinnerModule,
+    MatInputModule,
+    MatListModule,
     MatMenuModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSnackBarModule,
     MatTableModule,
-    MatSelectModule
+    MatToolbarModule,
+    MatButtonToggleModule
   ]
 })
 export class MaterialModule {}

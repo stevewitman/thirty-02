@@ -1,1 +1,32 @@
-<p>login works!</p>
+  <div class="example-card">
+    <mat-card class="mat-elevation-z1">
+        <mat-card-header>
+          <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="form" (submit)="login()" >
+          <mat-card-content>
+            <div fxLayout="column">
+              <mat-form-field class="full-width">
+                <input
+                  matInput
+                  placeholder="Username"
+                  type="text"
+                  formControlName="username"
+                  autocomplete="username">
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <input
+                  matInput
+                  placeholder="Password"
+                  type="password"
+                  formControlName="password"
+                  autocomplete="current-password">
+              </mat-form-field>
+            </div>
+              <div align="end">
+                <button mat-raised-button color="primary" type="submit">Login</button>
+            </div>
+          </mat-card-content>
+        </form>
+    </mat-card>
+  </div>

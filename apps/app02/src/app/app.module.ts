@@ -7,7 +7,8 @@ import { MaterialModule } from '@nx02/material';
 import { PetsComponent } from './pets/pets.component';
 import { PetsListComponent } from './pets/pets-list/pets-list.component';
 import { PetDetailComponent } from './pets/pet-detail/pet-detail.component';
-
+import { RoutingModule } from './routing.module'
+import { UiLoginModule } from '@nx02/ui-login'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { PetDetailComponent } from './pets/pet-detail/pet-detail.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RoutingModule,
+    UiLoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
